@@ -1,0 +1,151 @@
+* {
+  /* Asi hace que se lo apliques a todo */
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(31, 34, 36);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 20px 20px 0 0;
+  font-size: 12px;
+  gap: 20px;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.icono {
+  /* Los nombres de clases se ponen en miniscula completamente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Main Content */
+
+h1 {
+  /* La propiedad flex se usa unicamente para los contenedores, tiene que ser un caso muy especial y creo que este no es uno de ellos */
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-container h1 {
+  font-size: 50px;
+  color: aliceblue;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.search-box {
+  width: 30%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #5f6368;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px 0px 14px;
+}
+
+.search-box input {
+  background-color: transparent;
+  padding: 0px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: aliceblue;
+}
+
+.search-box .search-options {
+  display: flex;
+  gap: 10px;
+}
+
+i {
+  color: white;
+}
+
+.search-buttons {
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px;
+  gap: 10px;
+}
+
+.search-buttons button {
+  align-items: center;
+  border: none;
+  background-color: #2f3134;
+  color: aliceblue;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+/* Footer */
+
+footer {
+  width: 100vw;
+  height: 94px;
+  background-color: #171717;
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.854);
+  font-family: "Arial";
+  font-size: 15px;
+}
+
+footer .location {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  height: 50%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.601);
+}
+
+footer .info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 50%;
+}
+
+footer .info-container div {
+  display: flex;
+  gap: 20px;
+}
